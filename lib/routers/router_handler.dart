@@ -2,6 +2,7 @@ import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_example/views/my_home_page.dart';
 import 'package:flutter_example/views/root_page.dart';
+import 'package:flutter_example/views/my_images_page.dart';
 import 'package:flutter_example/widgets/404.dart';
 import 'package:flutter_example/widgets/my_stateful_widget.dart';
 import 'package:flutter_example/widgets/my_stateless_widget.dart';
@@ -32,4 +33,9 @@ var myStatelessWidgetHandler = new Handler(handlerFunc: (BuildContext context, M
 /// 首页
 var rootPageHandler = new Handler(handlerFunc: (BuildContext context, Map<String, List<String>> params) {
   return RootPage();
+});
+
+/// 图片 页面
+var myImagesPageHandler = new Handler(handlerFunc: (BuildContext context, Map<String, List<String>> params) {
+  return MyImagesPage();
 });

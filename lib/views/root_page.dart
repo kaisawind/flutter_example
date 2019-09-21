@@ -31,6 +31,13 @@ class RootPage extends StatelessWidget {
               },
               trailing: Icon(Icons.keyboard_arrow_right),
             ),
+            ListTile(
+              title: Text('Images'),
+              onTap: () {
+                Navigator.of(context).pushNamed(Routes.image);
+              },
+              trailing: Icon(Icons.keyboard_arrow_right),
+            ),
           ],
         ));
   }

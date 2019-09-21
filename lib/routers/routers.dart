@@ -6,6 +6,7 @@ class Routes {
   static String home = '/home';
   static String statefulWidget = '/widget/stateful';
   static String statelessWidget = '/widget/stateless';
+  static String image = '/views/images';
 
   static void configureRoutes(Router router) {
     router.notFoundHandler = notFoundWidgetHandler;
@@ -13,5 +14,6 @@ class Routes {
     router.define(home, handler: homePageHandler);
     router.define(statefulWidget, handler: myStatefulWidgetHandler);
     router.define(statelessWidget, handler: myStatelessWidgetHandler);
+    router.define(image, handler: myImagesPageHandler);
   }
 }
