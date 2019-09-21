@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_example/views/my_home_page.dart';
 import 'package:flutter_example/views/root_page.dart';
 import 'package:flutter_example/views/my_images_page.dart';
+import 'package:flutter_example/views/my_shared_preferences.dart';
 import 'package:flutter_example/widgets/404.dart';
 import 'package:flutter_example/widgets/my_stateful_widget.dart';
 import 'package:flutter_example/widgets/my_stateless_widget.dart';
@@ -38,4 +39,9 @@ var rootPageHandler = new Handler(handlerFunc: (BuildContext context, Map<String
 /// 图片 页面
 var myImagesPageHandler = new Handler(handlerFunc: (BuildContext context, Map<String, List<String>> params) {
   return MyImagesPage();
+});
+
+/// 存储 页面
+var mySharedPreferencesHandler = new Handler(handlerFunc: (BuildContext context, Map<String, List<String>> params) {
+  return MySharedPreferences();
 });

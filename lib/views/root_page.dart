@@ -38,6 +38,13 @@ class RootPage extends StatelessWidget {
               },
               trailing: Icon(Icons.keyboard_arrow_right),
             ),
+            ListTile(
+              title: Text('Shared Preferences'),
+              onTap: () {
+                Navigator.of(context).pushNamed(Routes.sharedPreferences);
+              },
+              trailing: Icon(Icons.keyboard_arrow_right),
+            ),
           ],
         ));
   }

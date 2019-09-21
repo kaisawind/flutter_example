@@ -7,6 +7,7 @@ class Routes {
   static String statefulWidget = '/widget/stateful';
   static String statelessWidget = '/widget/stateless';
   static String image = '/views/images';
+  static String sharedPreferences = '/views/shared_preferences';
 
   static void configureRoutes(Router router) {
     router.notFoundHandler = notFoundWidgetHandler;
@@ -15,5 +16,6 @@ class Routes {
     router.define(statefulWidget, handler: myStatefulWidgetHandler);
     router.define(statelessWidget, handler: myStatelessWidgetHandler);
     router.define(image, handler: myImagesPageHandler);
+    router.define(sharedPreferences, handler: mySharedPreferencesHandler);
   }
 }

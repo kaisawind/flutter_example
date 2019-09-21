@@ -28,6 +28,11 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
 
+  # Wraps NSUserDefaults (on iOS) and SharedPreferences (on Android), providing a persistent store for simple data. Data is persisted to
+  # disk asynchronously. Neither platform can guarantee that writes will be persisted to disk after returning and this plugin must not
+  # be used for storing critical data.
+  shared_preferences: ^0.5.3+4
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
