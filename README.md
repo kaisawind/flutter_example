@@ -6,6 +6,7 @@
 
 <p align="center">
   <img alt="Pub" src="https://img.shields.io/pub/v/fluro?label=fluro" />
+  <img alt="shared_preferences" src="https://img.shields.io/pub/v/shared_preferences?label=shared_preferences" />
   <img src="https://img.shields.io/badge/flutter-v1.10.4--pre.53-blue" />
 </p>
 
