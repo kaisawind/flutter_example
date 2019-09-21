@@ -16,9 +16,22 @@ class RootPage extends StatelessWidget {
                 Navigator.of(context).pushNamed(Routes.home);
               },
               trailing: Icon(Icons.keyboard_arrow_right),
-            )
+            ),
+            ListTile(
+              title: Text('Stateful Widget'),
+              onTap: () {
+                Navigator.of(context).pushNamed(Routes.statefulWidget);
+              },
+              trailing: Icon(Icons.keyboard_arrow_right),
+            ),
+            ListTile(
+              title: Text('Stateless Widget'),
+              onTap: () {
+                Navigator.of(context).pushNamed(Routes.statelessWidget);
+              },
+              trailing: Icon(Icons.keyboard_arrow_right),
+            ),
           ],
-        )
-    );
+        ));
   }
 }

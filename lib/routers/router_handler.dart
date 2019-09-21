@@ -4,6 +4,7 @@ import 'package:flutter_example/views/my_home_page.dart';
 import 'package:flutter_example/views/root_page.dart';
 import 'package:flutter_example/widgets/404.dart';
 import 'package:flutter_example/widgets/my_stateful_widget.dart';
+import 'package:flutter_example/widgets/my_stateless_widget.dart';
 
 /// 主页
 var homePageHandler = new Handler(
@@ -21,6 +22,11 @@ var notFoundWidgetHandler = new Handler(handlerFunc: (BuildContext context, Map<
 /// 有状态组件 页面
 var myStatefulWidgetHandler = new Handler(handlerFunc: (BuildContext context, Map<String, List<String>> params) {
   return MyStatefulWidget();
+});
+
+/// 无状态组件 页面
+var myStatelessWidgetHandler = new Handler(handlerFunc: (BuildContext context, Map<String, List<String>> params) {
+  return MyStatelessWidget();
 });
 
 /// 首页

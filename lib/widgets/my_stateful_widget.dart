@@ -6,7 +6,7 @@ class MyStatefulWidget extends StatefulWidget {
 }
 
 class _MyStatefulWidgetState extends State<MyStatefulWidget> {
-  _MyStatefulWidgetState() {}
+  _MyStatefulWidgetState();
 
   @override
   void initState() {
@@ -26,7 +26,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
         // the App.build method, and use it to set our appbar title.
         title: Text('Stateful Widget'),
       ),
-      body: Center(),
+      body: ListView(),
     );
   }
 }
