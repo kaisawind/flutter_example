@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_example/widgets/images/network_image.dart';
-import 'package:flutter_example/resources/image_keys.dart';
+import 'package:flutter_example/widgets/images/asset_image.dart';
 
 class MyImagesPage extends StatelessWidget {
   @override
@@ -12,6 +12,7 @@ class MyImagesPage extends StatelessWidget {
       body: ListView(
         children: <Widget>[
           MyNetworkImage(),
+          MyAssetImage(),
         ],
       ),
     );
